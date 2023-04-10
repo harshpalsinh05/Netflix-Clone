@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --body-color: #080b16;
+    --body-alter-color: #0b0f1b;
+    --container-color: #0d111f;
+    --text-color: #fff;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--body-color);
+}
+
+.img {
+    width: 120px;
+    margin-left: 20px;
+}
+
+#act {
+    color: whitesmoke;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    margin-top: 27px;
+    border: 0px;
+    outline: 0px;
+    background: #db0001;
+    color: whitesmoke;
+    padding: 7px 0px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    padding: 2rem 0 3rem;
+}
+
+.img {
+    width: 120px;
+    margin-bottom: -40px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 2rem;
+    margin-bottom: 10px;
+}
+
+.price-plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(337px, auto));
+    gap: 1.5rem;
+}
+
+.price-box {
+    background: var(--container-color);
+    border-radius: 1rem;
+    transition: 1.9s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.price-box:hover {
+    transform: scale(1.10);
+    transition: 1.9s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.top-box {
+    padding: 30px;
+    border-radius: 1rem 1rem 0 0;
+    background: var(--body-alter-color);
+}
+
+.p-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.single {
+    color: rgb(45, 212, 191);
+}
+
+.price {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.price span {
+    font-size: 1.07rem;
+    font-weight: 500;
+    color: rgb(160 164 194);
+}
+
+.btn {
+    color: var(--text-color);
+    background: rgb(45 212 191 / 80%);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.btn:hover {
+    transition: 0.3s all ease;
+}
+
+.single-btn:hover {
+    background: rgb(45 212 191 / 50%);
+}
+
+.top-box p {
+    font-size: 0.87rem;
+    color: #178fff;
+    text-align: center;
+}
+
+.bottom-box {
+    padding: 30px;
+}
+
+.p-box {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(30 41 58);
+}
+
+.p-box .bx {
+    color: rgb(5 150 105);
+    font-size: 21px;
+}
+
+.p-box p {
+    font-size: 0.87rem;
+    font-size: 400;
+}
+
+.premium {
+    color: #818cf8;
+}
+
+.premium-btn {
+    background: #4f46e5;
+}
+
+.premium-btn:hover {
+    background: rgb(79 70 228 / 60%);
+}
+
+.business {
+    color: #fbbf24;
+}
+
+.business-btn {
+    background: #d97706;
+}
+
+.business-btn:hover {
+    background: rgb(217 119 6 / 60%);
+}
+
+@media (max-width: 1050px) {
+    .price-plan {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .heading {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 400px) {
+    .price-plan {
+        grid-template-columns: 1fr;
+    }
+}
