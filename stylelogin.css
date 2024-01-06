@@ -1,20 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-body{
+body {
     background: rgba(0, 0, 0, 0.5) url('netflix.jpg');
     background-blend-mode: darken;
 }
 
-.logo img{
+.logo img {
     width: 12%;
     margin-left: 30px;
 }
 
-.container{
+.container {
     position: absolute;
     margin-left: 36%;
     margin-top: 1%;
@@ -23,13 +23,15 @@ body{
     background-color: #000;
 }
 
-.container h1{
+.container h1 {
     color: #fff;
     margin-top: 60px;
     margin-left: 50px;
 }
 
-input{
+input {
+    display: flex;
+    justify-content: center;
     margin-left: 50px;
     margin-top: 20px;
     width: 320px;
@@ -40,13 +42,13 @@ input{
     font-size: 20px;
 }
 
-input::placeholder{
+input::placeholder {
     font-size: 17px;
     margin-left: 15px;
     padding: 12px;
 }
 
-input[type=submit]{
+input[type=submit] {
     width: 320px;
     height: 45px;
     background-color: red;
@@ -54,19 +56,27 @@ input[type=submit]{
     border-radius: 3px;
     cursor: pointer;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
+    display: flex;
     width: 25px;
     height: 18px;
     border-radius: 5px;
+    /* margin-bottom:12%; */
+    /* padding-bottom: 12%; */
 }
 
-label{
+label {
+    position: relative;
     color: rgb(125, 119, 119);
+    margin-left: 20%;
+    display: flex;
+    bottom: 18px;
 }
 
-.form a{
+.form a {
     float: right;
     margin-top: 24px;
     margin-right: 64px;
@@ -74,18 +84,39 @@ label{
     text-decoration: none;
 }
 
-.content{
+.content {
     position: absolute;
     margin-top: 80px;
     font-size: 9px;
     margin-left: 55px;
 }
 
-.content h2{
+.content h2 {
     color: rgb(125, 119, 119);
 }
 
-.container a{
+.container a {
     color: #fff;
     text-decoration: none;
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .container {
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 12%;
+        width: 440px;
+        height: 650px;
+        background-color: #000;
+    }
 }
